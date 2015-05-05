@@ -1,0 +1,1186 @@
+/*-----------------------------------------------------
+-------------------------------------------------------
+	1. Font Face
+	2. Logo and Picture
+	3. Header Bar and Navigation
+	4. Left menu setting
+		4.1. Left otz
+		4.2 Left news
+	5. Works block IMG
+	6. Phone and Mail
+	7. Body
+	8. Articles block
+		8.1. Art Table 
+	9. Contact
+	10. Footer
+--------------------------------------------------------
+	- Navigation setting
+	- MODAL WINDOW
+	- Carousel setting
+	- Calculator
+	- Arch carousel setting
+	- bxSlider setting
+	- Fade effect fot carousel
+	- Media 768-1000
+	- Media 480-768
+	- Media 320-480
+--------------------------------------------------------
+------------------------------------------------------*/
+
+
+/* 1. Font Face
+---------------------------*/
+@font-face {
+	font-family: 'dejavu_sansextralight';
+	src: url('../fonts/DejaVuSans-ExtraLight-webfont.ttf');
+	src: url('../fonts/DejaVuSans-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/DejaVuSans-ExtraLight-webfont.woff2') format('woff2'),
+			url('../fonts/DejaVuSans-ExtraLight-webfont.woff') format('woff'),
+			url('../fonts/DejaVuSans-ExtraLight-webfont.ttf') format('truetype'),
+			url('../fonts/DejaVuSans-ExtraLight-webfont.svg#dejavu_sansextralight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*******************************************/
+.container {
+	width: 1000px;
+	padding: 0;
+}
+.row { margin: 0; }
+.paddzero {
+	padding: 0;
+}
+/*----------------------- TEXT setting -------*/
+.textset14 a {
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	text-decoration: none;
+	padding: 0px 11px;
+}
+.textset16 a {
+	font-size: 16px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	text-decoration: none;
+}
+.centertext {
+	margin: 0 auto;
+	text-align: center;
+}
+/*******************************************/
+
+/* 2. Logo and Picture
+---------------------------*/
+.logo {
+	width: 229px;
+	height: 61px;
+	margin-top: 10px;
+	background: url('../images/logo.png') no-repeat;
+	background-size: 100%;
+}
+.pict {
+	width: 634px;
+	height: 247px;
+	margin-top: 5px;
+	background-size: 100%;
+	position: relative;
+}
+
+/* 3. Header Bar and Navigation
+---------------------------*/
+.headbar {
+	width: 100%;
+	background: url('../images/background.png');
+	border-bottom: 2px solid #eaeaea;
+}
+.navbar {
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+.navbar-collapse {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar-toggle {
+	margin-left: 22px;
+}
+.navbar > .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+ul.nav > li {
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: outside;
+	color: #fec82f;
+}
+ul.nav > li:first-child {
+	list-style-type: none;
+}
+ul.nav > li {
+	margin-right: 25px;
+}
+ul.nav > li:last-child {
+	margin-right: 0;
+}
+ul.nav > li a {
+	color: #3e3e3e;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-size: 16px;
+	font-family: 'dejavu_sansextralight';
+	text-transform: uppercase;
+}
+
+ul.nav > li a:hover {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #fec82f;
+	background: transparent;
+}
+ul.nav > li a:focus {
+	background: transparent;
+}
+ul.nav > li.active > a,ul.nav > li.current-menu-parent> a {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #fec82f;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #3e3e3e;
+	background: transparent !important;
+	
+  
+}
+
+
+.dropdown-menu {
+	min-width: 117px;
+	position: absolute;
+	top: 37px;
+}
+.dropdown-menu > li {
+	list-style: disc;
+	color: #3e3e3e;
+	margin-left: 20px;
+}
+.dropdown-menu > li:hover {
+	list-style: disc;
+	color: #fec82f;
+}
+ul.dropdown-menu > li > a:hover {
+	border: none;
+}
+.dropdown-menu > li > ul > li {
+	list-style: none;
+	margin: 0;
+}
+.dropdown-menu > li > ul > li > a {
+	padding: 4px 20px;
+}
+.dropdown-menu > li > ul > li a:hover {
+	color: #3e3e3e;
+	border-bottom: 1px dashed #3e3e3e;
+}
+.dropdown-menu > li > ul > li:hover {
+	list-style: none;
+}
+.dropdown-menu > li:hover {
+	border-bottom: none;
+}
+.dropdown-menu > li > a {
+	padding: 3px 20px;
+}
+.nav > .open > a {
+	background: transparent;
+}
+.nav > .open > a:focus {
+	background: transparent;
+}
+
+/* 4. Left menu
+-----------------------------*/
+.leftmenu {
+	padding: 0;
+}
+.panel-group > ul.ulleftmenu > li > a:hover {
+	color: #fec82f;
+}
+.panel-group > ul.ulleftmenu > li > a {
+	font-size: 16px;
+	color: #3e3e3e;
+	text-decoration: none;
+}
+.panel-group > ul.ulleftmenu > li.panel-title > [aria-expanded="true"] {
+	border: 2px solid #fec82f;
+	width: 100%;
+	height: 100%;
+	padding-right: 40%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li.panel-title > a {
+	font-size: 14px;
+	color: #3e3e3e;
+	text-decoration: none;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li:hover {
+	list-style-type: disc;
+	color: #fec82f;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li.panel-title > [aria-expanded="true"] {
+	color: #fec82f;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li {
+	list-style-type: none;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li > a {
+	font-size: 12px;
+}
+ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > .panel-collapse > .panel-body > ul.ulleftmenu > li > a:hover {
+	color: #3e3e3e;
+	border-bottom: 2px solid #fec82f;
+}
+
+/* 4.1. Left otz
+--------------------------*/
+.otzltext {
+	float: right;
+	width: 200px;
+	text-align: justify;
+}
+i.fa-quote-right {
+	color: #fec82f;
+}
+/* 4.2 Left news
+-----------------------------*/
+.newsltext {
+	float: right;
+	text-align: justify;
+}
+
+/* 5. Works block IMG
+---------------------------*/
+.imgworks {
+	border: 1px solid #fec82f;
+	margin: 10px -2px 3px;
+}
+/* 6. Phone and Mail
+---------------------------*/
+.margin-top {
+	margin-top: 10px;
+}
+.right-al {
+	text-align: right;
+}
+.margin-top a {
+	font-size: 16px;
+	color: #3e3e3e;
+	font-family: 'dejavu_sansextralight';
+	text-align: right;
+	text-decoration: none;
+}
+.phone {
+	margin-bottom: 5px;
+}
+.mail {
+	margin-top: 10px;
+}
+img.phone {
+	margin-left: 80px;
+}
+img.mail {
+	margin-top: 30px;
+	margin-left: 80px;
+}
+.btncb { /* button call back */
+	margin-top: 15px;
+	width: 128px;
+	height: 27px;
+	background: transparent;
+	border: 1px solid #ffc217;
+	font-family: 'dejavu_sansextralight';
+	font-size: 16px;
+	text-align: center;
+}
+/* 7. Body 
+---------------------------*/
+.textmin {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.textmin a {
+	color: #888888;
+	font-family: 'dejavu_sansextralight';
+	font-size: 10px;
+	text-decoration: none;
+}
+.textbig{
+	margin-bottom: 20px;
+}
+.textbig a {
+	color: #3e3e3e;
+	font-family: 'dejavu_sansextralight';
+	font-size: 18px;
+	border-bottom: 2px solid #fec82f;
+	text-decoration: none;
+}
+.pagetext a {
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	text-decoration: none;
+}
+.pagetext ,.pagetext p{
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+.pagetext > ul > li {
+	margin-left: 20px;
+}
+a.yellowtext {
+	color: #ffc119;
+}
+.img-responsive {
+	margin: 0 auto;
+}
+/* 8. Articles block
+---------------------------*/
+.arttitle {
+	margin-bottom: -10px;
+}
+.arttitle a {
+	color: #ffc119;
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	text-decoration: none;
+}
+.arttext {
+	width: 100%;
+	margin-top: -15px;
+	text-align: justify;
+}
+.artbtn {
+	position: relative;
+	float: right;
+	height: 27px;
+	padding: 0 25px;
+	border: 1px solid #ffc217;
+	font-family: 'dejavu_sansextralight';
+	font-size: 16px;
+	text-align: center;
+}
+.artimg,.alignleft {
+	float: left;
+	padding: 8px;
+}
+.dateart a {
+	color: #888888;
+	font-family: 'dejavu_sansextralight';
+	font-size: 10px;
+	text-decoration: none;
+}
+.pagetext > ul > li {
+	color: #ffc217;
+}
+ul.artlidisc {
+	list-style: inside disc;
+}
+ul.artlinum {
+	list-style: inside decimal;
+}
+.pagetext > ul > li > a {
+	color: #3e3e3e;
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	text-decoration: none;
+}
+.incenter {
+	margin-right: 55px;
+	margin-bottom: 10px;
+}
+
+/* 8.1. Art Table 
+-----------------------------*/
+table {
+	margin: 0 auto;
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	text-decoration: none;
+}
+th {
+	border: 1px solid #3e3e3e;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffc217 !important;
+}
+th > a {
+	color: #ffc217 !important;
+}
+th > a:hover {
+	color: #ffc217;
+	text-decoration: none;
+}
+td {
+	border: 1px solid #3e3e3e;
+	padding: 10px;
+	text-align: center;
+}
+td > a {
+	color: #3e3e3e;
+}
+td > a:hover {
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+/* Workerinst
+-----------------*/
+.instwork {
+	height: 130px;
+}
+/* 9. Contact
+---------------------------*/
+.context a {
+	line-height: 26px;
+}
+.inputc {
+	height: 27px;
+	width: 272px;
+	border: 1px solid #ffc217;
+	font-family: 'dejavu_sansextralight';
+	font-size: 16px;
+	text-align: left;
+	padding-left: 15px;
+	float: right;
+	margin-top: 0px;
+}
+.inputc-2 {
+	height: 27px;
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid #ffc217;
+	font-family: 'dejavu_sansextralight';
+	font-size: 16px;
+	text-align: left;
+	padding-left: 15px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.btncon {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.btncon-2 {
+	margin: 0px 0px 10px
+}
+label {
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	font-weight: 500;
+	margin-top: 3px;
+}
+/* 10. Footer
+---------------------------*/
+.footline {
+	background: url('../images/footline.png') repeat-x;
+	width: 100%;
+	height: 19px;
+	margin-top: 20px;
+}
+.copy {
+	margin: 20px 0;
+}
+.copy a {
+	color: #3f3f3f;
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	text-decoration: none;
+}
+.social {
+	margin-top: 15px;
+	text-align: right;
+}
+.footphone {
+	display: inline-block;
+	margin-top: 6px;
+	text-align: center;
+}
+.footphone a {
+	font-size: 16px;
+	font-family: 'dejavu_sansextralight';
+	color: #3e3e3e;
+	text-decoration: none;
+}
+img.socicon {
+	width: 30px;
+	height: 30px;
+}
+
+.pluso-odnoklassniki
+	{
+      background: url(../images/social/od.png) no-repeat !important;
+	  background-size: 30px 30px !important;
+
+	}
+.pluso-vkontakte
+	{
+	  background: url(../images/social/vk.png) no-repeat !important;
+	  background-size: 30px 30px !important;
+	}	
+.pluso-facebook
+	{
+	  background: url(../images/social/fb.png) no-repeat !important;
+	  background-size: 30px 30px !important;
+	}
+.pluso-more
+	{
+	 display:none !important;
+	}
+.shareinfo
+	{
+	float: left;
+    padding-top: 10px;
+	font-size: 14px;
+  font-family: 'dejavu_sansextralight';
+  color: #3e3e3e;
+  text-decoration: none;
+	  
+	}
+	
+	
+.marker {
+	margin-top: 10px;
+	text-align: right;
+}
+.marker > i {
+	color: #ffc930;
+}
+/* Modal window
+---------------------------*/
+.mwinputblock > form > .form-group {
+	width: 140px;
+	display: inline;
+}
+.phonewindow {
+	margin: 50px auto;
+	background: #fff;
+	border: 1px solid #eee;
+	width: 320px;
+	height: 230px;
+}
+.close {
+	margin-right: -10px;
+}
+.mwbody {
+	padding: 5px;
+}
+a.highmw {
+	font-size: 26px;
+	color: #fec82f;
+}
+.mwinputblock {
+	margin-top: 20px;
+}
+.mwinput {
+	font-size: 14px;
+	font-family: 'dejavu_sansextralight';
+	width: 131px;
+	height: 27px;
+	border: none;
+	border-bottom: 1px solid #fec82f;
+	background: #fff;
+	margin-top: 20px;
+	padding-left: 14px;
+}
+.mwbtn {
+	font-family: 'dejavu_sansextralight';
+	font-size: 14px;
+	height: 27px;
+	border: 1px solid #fec82f;
+	background: #fff;
+	color: #3e3e3e;
+	margin-top: 35px;
+}
+.errorsmwone {
+	display: none;
+	position: absolute;
+	top: 92px;
+	left: 21px;
+	text-align: left;
+	width: 108px;
+	height: 28px;
+	font-size: 11px;
+}
+.errorsmwtwo {
+	display: none;
+	position: absolute;
+	top: 92px;
+	left: 157px;
+	text-align: left;
+	width: 108px;
+	height: 28px;
+	font-size: 11px;
+}
+.has-error > input {
+	box-shadow: 0 0 5px rgba(256, 0, 0, 1);
+}
+.has-error > .mwinput {
+	box-shadow: none;
+	border-bottom: 2px solid #f00;
+}
+.has-error > .mwbtn {
+	box-shadow: none;
+}
+.thxshow {
+	display: none;
+	background: #fff;
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	top: 40px;
+}
+/* Calculator
+---------------------------*/
+.calcblock {
+	background: url('../images/calc.png') no-repeat right;
+	border: 1px solid #fec82f;
+}
+.inputcalc {
+	border: 1px solid #fec82f;
+}
+.btncalc {
+	background: #fff;
+	border: 1px solid #fec82f;
+}
+input[type="radio"] {
+	border: 2px solid #fec82f;
+	box-shadow: none;
+}
+input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+}
+input[type="radio"] + label > span {
+	position: relative;
+	border-radius: 12px;
+	width: 14px;
+	height: 14px;
+	background-color: #FFFFFF;
+	border: 1px solid #ffc119;
+	margin: 0 1em 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+input[type="radio"]:checked + label > span span {
+	 display: inline-block;
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		border-radius: 4px;
+		border: none;
+		background: #ffc119;
+}
+.tip{
+		display: inline;
+		position: relative;
+		background
+}
+
+.tip:hover:after{
+		background: #fff;
+		border: 1px dashed #ffc119;
+		border-radius: 5px;
+		bottom: 26px;
+		color: #3e3e3e;
+		content: attr(title);
+		left: 105%;
+		top: -140%;
+		height: 90px;
+		width: 150px;
+		padding: 5px 15px;
+		position: absolute;
+		z-index: 10;
+		overflow: hidden;
+}
+
+/* Carousel setting
+-----------------------*/
+.bannercarousel {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.carousel-indicators .active {
+	background-color: #fec82f;
+}
+.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fec82f;
+}
+.carousel-indicators .active {
+	width: 17px;
+	height: 17px;
+	background-color: #fec82f;
+}
+.carousel-indicators {
+	bottom: -45px;
+}
+.inputcalc[placeholder] {
+	text-align: right;
+}
+.inputcalc:focus {
+	text-align: left;
+}
+/* Arch carousel
+--------------------------*/
+.archcarousel {
+	width: 597px;
+	margin: 0 auto;
+}
+.archcarousel > .bgarch > .carousel-indicators {
+	top: -30px;
+	left: 88px;
+}
+.bgarch {
+	position: absolute;
+	background: #d8d8d8;
+	width: 700px;
+	height: 10px;
+	border-radius: 5px;
+	top: -39px;
+	right: -50px;
+}
+.archli {
+	width: 1000px;
+	height: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.archli li {
+	top: -30px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid #d8d8d8;
+	background: #d8d8d8;
+	margin-right: 65px;
+	margin-bottom: 50px;
+}
+.archli li.active {
+	top: -30px;
+	width: 49px;
+	height: 48px;
+	border-radius: 50%;
+	background: url('../images/active.png') no-repeat;
+	margin-right: 66px;
+	margin-bottom: 51px;
+}
+.carousel-caption {
+	position: absolute;
+	top: -60px;
+	text-shadow: none;
+}
+.archcarousel > .carousel-inner > .item {
+	margin-top: 130px;
+}
+.archcarousel > .carousel-control {
+	top: -380px;
+	left: 34%;
+}
+.archcarousel > .carousel-control.right {
+	background: transparent;
+	margin-left: 100px;
+}
+.archcarousel > .carousel-control.left {
+	background: transparent;
+	margin-right: 30px;
+}
+.archcarousel > .carousel-control.right > span {
+	color: #000;
+}
+.archcarousel > .carousel-control.left > span {
+	color: #000;
+}
+/* bxSlider setting
+------------------------*/
+.bx-viewport {
+	height: 130px;
+	margin-top: 10px;
+	box-shadow: none;
+	border: none;
+}
+
+/* Fade effect carousel
+----------------------------*/
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+		.carousel-fade .carousel-inner > .item.next,
+		.carousel-fade .carousel-inner > .item.active.right {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+							transform: translate3d(0, 0, 0);
+		}
+		.carousel-fade .carousel-inner > .item.prev,
+		.carousel-fade .carousel-inner > .item.active.left {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+							transform: translate3d(0, 0, 0);
+		}
+		.carousel-fade .carousel-inner > .item.next.left,
+		.carousel-fade .carousel-inner > .item.prev.right,
+		.carousel-fade .carousel-inner > .item.active {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+							transform: translate3d(0, 0, 0);
+		}
+}
+/*-------------------------------------------------------------*/
+
+/* Nav setting
+-------------------------*/
+@media screen and (min-width: 768px) and (max-width: 9999px) {
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+		display: block;
+		margin-right: 100%;
+	}
+	.navbar-nav > li > .dropdown-menu {
+		border: 2px solid #fec82f;
+	}
+	.navbar-nav > li > .dropdown-menu > li > .dropdown-menu {
+		border: 2px solid #fec82f;
+		left: 100%;
+		top: -6px;
+	}
+}
+/* 7. Media 768 - 1000
+---------------------------*/
+@media screen and (min-width: 768px) and (max-width: 999px) { 
+	.container {
+		width: 768px;
+	}
+	.logo {
+		width: 170px;
+		height: 51px;
+	}
+	.pict {
+		width: 464px;
+		height: 170px;
+		margin-top: 30px;
+	}
+	img.phone {
+		margin-left: 30px;
+	}
+	img.mail {
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+	ul.nav > li {
+		margin-right: 9px;
+		display: block;
+	}
+	ul.nav > li a {
+		font-size: 11px;
+	}
+	.inputc {
+		width: 212px;
+	}
+	.copy {
+		text-align: center;
+	}
+	.incenter {
+		margin-right: 25px;
+	}
+	.otztext {
+		width: 170px;
+	}
+}
+/* 8. Media 480 - 768
+---------------------------*/
+@media screen and (min-width: 480px) and (max-width: 767px) { 
+	.container {
+		width: 480px;
+	}
+	.logo {
+		width: 140px;
+		height: 41px;
+	}
+	.pict {
+		width: 304px;
+		height: 124px;
+		margin-top: 40px;
+	}
+	img.phone {
+		margin-top: 3px;
+		margin-left: 0px;
+	}
+	img.mail {
+		margin-top: 17px;
+		margin-left: 0px;
+	}
+	.margin-top a { font-size: 10px; }
+	div.phone {
+		position: relative;
+		width: 100px;
+		text-align: right;
+		margin-bottom: 5px;
+	}
+	div.mail {
+		position: relative;
+		width: 100px;
+		text-align: right;
+		margin-top: 10px;
+	}
+	.btncb { /* button call back */
+		width: 100px;
+		font-size: 12px;
+	}
+	ul.nav > li a:hover { /* hover menu nav */
+		padding-bottom: 10px;
+		color: #fec82f;
+		border: none;
+	}
+	ul.nav > li.active > a { /* active li menu nav */
+		padding-bottom: 10px;
+		border-bottom: none;
+		color: #fec82f;
+	}
+	.navbar-nav {
+		margin: 7.5px 3px;
+	}
+	ul.nav > li {
+		margin-left: 30px;
+		display: block;
+	}
+	.textmin a {
+		font-size: 10px;
+	}
+	.textbig{
+		margin-bottom: 15px;
+	}
+	.textbig a {
+		font-size: 14px;
+	}
+	.pagetext a {
+		font-size: 12px;
+	}
+	.copy a {
+		font-size: 12px;
+	}
+	.copy {
+		text-align: center;
+	}
+	.social {
+		text-align: center;
+	}
+	.footphone {
+		text-align: center;
+	}
+	.inputc {
+		width: 312px;
+	}
+	.incenter {
+		margin-right: 170px;
+	}
+	.borderbot {
+		margin: 50px;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+/* 9. Media 320 - 480
+---------------------------*/
+@media screen and (min-width: 240px) and (max-width: 479px) {
+	.container {
+		width: 320px;
+	}
+	.logo {
+		width: 175px;
+		height: 51px;
+	}
+	.pict { display: none; }
+	img.phone { display: none; }
+	img.mail { display: none; }
+	.margin-top {
+		position: relative;
+		width: 150px;
+	}
+	.margin-top a {
+		font-size: 10px;
+	}
+	.phone {
+		margin-bottom: 5px;
+	}
+	.mail {
+		margin-top: 0px;
+	}
+	.btncb { /* button call back */
+		
+		font-size: 10px;
+		margin-top: 6px;
+		margin-bottom: 62px;
+		margin-right: -5px !important;
+		
+	}
+	ul.nav > li a:hover { /* hover menu nav */
+		padding-bottom: 10px;
+		color: #fec82f;
+		border: none;
+	}
+	ul.nav > li.active > a { /* active li menu nav */
+		padding-bottom: 10px;
+		border-bottom: none;
+		color: #fec82f;
+	}
+	.fa-3x {
+		font-size: 2em;
+	}
+	.navbar-toggle {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	ul.nav > li {
+		display: block;
+	}
+	.navbar {
+		margin-top: -65px;
+	}
+	.navbar-nav {
+		margin: 7.5px 32px;
+	}
+	.textmin a {
+		font-size: 10px;
+	}
+	.textbig {
+		margin-bottom: 10px;
+	}
+	.textbig a {
+		font-size: 12px;
+	}
+	.pagetext a {
+		font-size: 12px;
+	}
+	.copy a {
+		font-size: 10px;
+	}
+	.copy {
+		text-align: center;
+	}
+	.social {
+		text-align: center;
+	}
+	.footphone {
+		text-align: center;
+	}
+	.footphone a {
+		font-size: 10px;
+	}
+	.inputc {
+		width: 172px;
+	}
+	.btncon {
+		margin-top: 10px;
+	}
+	.btncon-2 {
+		margin-top: 10px;
+	}
+	th {
+		padding: 5px;
+	}
+	td {
+		padding: 5px;
+	}
+	.incenter {
+		margin-right: 85px;
+	}
+	.borderbot {
+		margin: 50px;
+		border-bottom: 1px solid #eee;
+	}
+	.calcblock {
+		background: none;
+		border: 1px solid #fec82f;
+	}
+	
+	.pagetext, .pagetext p {
+  padding:5px;
+}
+}
+
+
+
+
+
+.ulleftmenu > li >.dropdown-menu {
+ 
+  width: 100%;
+  top:0px;
+  border:none;
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow:none ; 
+  box-shadow: none ;
+}
+
+.ulleftmenu >.open >a
+	{
+     border: 2px solid #fec82f;
+  width: 100%;
+  height: 100%;
+  padding-right: 40%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+	}
+	
+	.ulleftmenu >li> ul.dropdown-menu > li
+	{
+      list-style:  none !important;
+	 
+
+	
+	}
+	
+	.ulleftmenu >li> ul.dropdown-menu > li>a:hover{
+	 list-style-type: disc;
+	color: #fec82f;
+	background-color: transparent;
+	}
+	
+	.clear
+	{
+	  clear: both;
+	
+	}
